@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 import Fluxxor from 'fluxxor'
 import TodoStore from './stores/TodoStore'
 import actions from './actions/TodoAction'
-import Application from './components/Application.jsx'
+import Todo from './components/Todo.jsx'
 
 let stores = {
 	TodoStore: new TodoStore()
@@ -17,6 +17,6 @@ flux.on('dispatch', function(type, payload){
 });
 
 ReactDom.render(
-	<Application flux={flux} />,
+	<Todo flux={flux} />,
 	document.getElementById('app')
 );

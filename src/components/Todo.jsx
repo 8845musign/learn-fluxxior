@@ -5,7 +5,7 @@ import TodoItem from './TodoItem.jsx'
 let FluxMixin = Fluxxor.FluxMixin(React);
 let StoreWatchMixin = Fluxxor.StoreWatchMixin;
 
-let Application = React.createClass({
+let Todo = React.createClass({
 	mixins: [FluxMixin, StoreWatchMixin('TodoStore')],
 	
 	getInitialState: function(){
@@ -53,4 +53,4 @@ let Application = React.createClass({
 	}
 });
 
-export default Application
+export default Todo
